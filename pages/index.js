@@ -276,48 +276,55 @@ export default function Home() {
           </motion.div>
         )}
         {/* ENDS MENU MOBILE */}
-        <section className={styles.header}>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 2 }}
-          >
-            <div className={styles.content}>
-              <div className={styles.name}>
-                <Image
-                  src="/img/alex-hoyer.png"
-                  alt="Alex Hoyer"
-                  className={styles.nameImg}
-                  width={1612}
-                  height={213}
-                  priority
-                />
-              </div>
-              <h2>&quot;Cruda&quot;</h2>
-              <h3>Ya disponible en todas las plataformas</h3>
-              <div className={styles.buttons}>
-                <div className={styles.buttonPrimary}>
-                  <a
-                    href="https://www.youtube.com/watch?v=aLac169OVYY"
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+        >
+          <section className={styles.header}>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 2, delay: 1 }}
+            >
+              <div className={styles.content}>
+                <div className={styles.name}>
+                  <Image
+                    src="/img/alex-hoyer.png"
+                    alt="Alex Hoyer"
+                    className={styles.nameImg}
+                    width={1612}
+                    height={213}
+                    priority
+                  />
+                </div>
+                <h2>&quot;Cruda&quot;</h2>
+                <h3>Ya disponible en todas las plataformas</h3>
+                <div className={styles.buttons}>
+                  <div className={styles.buttonPrimary}>
+                    <a
+                      href="https://www.youtube.com/watch?v=aLac169OVYY"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Video
+                    </a>
+                  </div>
+                  <div
+                    className={styles.buttonSecondary}
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Video
-                  </a>
-                </div>
-                <div
-                  className={styles.buttonSecondary}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <a href="https://open.spotify.com/artist/45ztMs8dTg6GRQ41yY4xtr?si=unFs455sQAWjel07p-QBnA">
-                    Música
-                  </a>
+                    <a href="https://open.spotify.com/artist/45ztMs8dTg6GRQ41yY4xtr?si=unFs455sQAWjel07p-QBnA">
+                      Música
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </motion.div>
-        </section>
+            </motion.div>
+          </section>
+        </motion.div>
+
         <section className={styles.bio} id="bio">
           <div className="container">
             <div className={styles.bioBox}>
@@ -615,7 +622,6 @@ export default function Home() {
                   width="100%"
                   height="500"
                   frameBorder="0"
-                  allowfullscreen=""
                   allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                   loading="lazy"
                 ></iframe>
