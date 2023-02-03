@@ -56,7 +56,7 @@
   display: none;
 }
 .navDesktop {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -64,6 +64,7 @@
   justify-content: space-between;
   color: white;
   padding: 20px 40px;
+  transition-duration: 0.2s;
 }
 .navDesktop .left {
   width: 25%;
@@ -74,6 +75,9 @@
 .navDesktop .right {
   width: 25%;
   text-align: right;
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
 .navDesktop .logo {
   width: 200px;
@@ -124,6 +128,10 @@
 }
 .navDesktop .social a:hover svg {
   fill: #20c47d;
+  transition-duration: 0.2s;
+}
+.navDesktopScrolled {
+  background-color: black;
   transition-duration: 0.2s;
 }
 
@@ -288,6 +296,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 998;
     padding: 10px 20px;
     justify-content: center;
     align-items: center;
