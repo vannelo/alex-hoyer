@@ -98,7 +98,7 @@ export default function Home() {
             </div>
           </div>
         </nav>
-        <div className={styles.header}>
+        <section className={styles.header}>
           <div className={styles.content}>
             <div className={styles.name}>
               <Image
@@ -114,7 +114,7 @@ export default function Home() {
             <div className={styles.buttons}>
               <div className={styles.buttonPrimary}>
                 <a
-                  href="https://open.spotify.com/"
+                  href="https://www.youtube.com/channel/UCPjWyWWxS2QvszZOLqlIzmw"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -130,8 +130,49 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-        <div className={styles.shows}>
+        </section>
+        <section className={styles.bio}>
+          <div className="container">
+            <div className={styles.bioBox}>
+              <div className={styles.left}>
+                <div className={styles.divider} />
+                <div className={styles.heading}>
+                  <div className={styles.title}>
+                    <h3>Alex Hoyer</h3>
+                  </div>
+                  <div className={styles.subtitle}>
+                    <h4>Lorem ipsum dolor sit amet</h4>
+                  </div>
+                  <div className={styles.text}>
+                    <p>
+                      Tempor dolore Lorem esse adipisicing mollit consequat aute
+                      proident nostrud ullamco ad velit eiusmod. Ipsum
+                      incididunt reprehenderit excepteur qui non minim laborum
+                      officia elit et commodo et. Ipsum aliqua ut ullamco
+                      commodo nulla do sit nulla consequat pariatur non
+                      reprehenderit eu. Amet pariatur veniam enim velit non qui
+                      consequat et. Dolore ad sunt minim est aliquip duis quis
+                      sit fugiat tempor amet enim. Veniam exercitation in
+                      incididunt ea.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.right}>
+                <div className={styles.image}>
+                  <Image
+                    src="/img/alex.jpg"
+                    alt="Alex Hoyer"
+                    className={styles.imageImg}
+                    width={2000}
+                    height={1336}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className={styles.shows}>
           <div className="container">
             <div className={styles.icon}>
               <svg
@@ -142,7 +183,7 @@ export default function Home() {
                 viewBox="0 0 16 16"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z"
                 />
               </svg>
@@ -318,7 +359,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </main>
     </>
   );

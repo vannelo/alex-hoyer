@@ -133,6 +133,40 @@
   height: auto;
 }
 
+.bio {
+  background-color: black;
+  color: white;
+  padding: 5em 0;
+}
+.bio .bioBox {
+  display: flex;
+}
+.bio .left {
+  text-align: right;
+  width: 40%;
+}
+.bio .right {
+  width: 60%;
+  padding: 20px;
+}
+.bio .divider {
+  width: 50px;
+  height: 3px;
+  background-color: #20c47d;
+  margin: 20px 0;
+  display: inline-block;
+}
+.bio .text {
+  margin: 20px 0;
+}
+.bio .image {
+  width: 100%;
+}
+.bio .image .imageImg {
+  width: 100%;
+  height: auto;
+}
+
 .shows {
   background-color: black;
   color: white;
@@ -190,6 +224,21 @@
   .header .name {
     width: 80%;
     margin: 10px auto;
+  }
+
+  .bio {
+    padding: 40px 20px;
+  }
+  .bio .bioBox {
+    display: block;
+  }
+  .bio .bioBox .left {
+    width: 100%;
+    text-align: left;
+  }
+  .bio .bioBox .right {
+    width: 100%;
+    padding: 0;
   }
 
   .shows {
