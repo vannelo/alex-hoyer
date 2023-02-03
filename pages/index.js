@@ -4,6 +4,9 @@ import Link from "next/link";
 import styles from "@/styles/Home.module.css";
 
 export default function Home() {
+  const goToSection = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <>
       <Head>
@@ -18,29 +21,31 @@ export default function Home() {
       <main className={styles.main}>
         <nav className={styles.navDesktop}>
           <div className={styles.left}>
-            <div className={styles.logo}>
-              <Image
-                src="/img/alex-hoyer.png"
-                alt="Alex Hoyer"
-                className={styles.logoImg}
-                width={1612}
-                height={213}
-              />
-            </div>
+            <Link href="/">
+              <div className={styles.logo}>
+                <Image
+                  src="/img/alex-hoyer.png"
+                  alt="Alex Hoyer"
+                  className={styles.logoImg}
+                  width={1612}
+                  height={213}
+                />
+              </div>
+            </Link>
           </div>
           <div className={styles.center}>
-            <Link href="/" className={styles.link}>
+            <div className={styles.link} onClick={() => goToSection("bio")}>
               Bio
-            </Link>
-            <Link href="/" className={styles.link}>
+            </div>
+            <div className={styles.link} onClick={() => goToSection("shows")}>
               Shows
-            </Link>
-            <Link href="/" className={styles.link}>
+            </div>
+            <div className={styles.link} onClick={() => goToSection("music")}>
               Música
-            </Link>
-            <Link href="/" className={styles.link}>
+            </div>
+            <div className={styles.link} onClick={() => goToSection("contact")}>
               Contacto
-            </Link>
+            </div>
           </div>
           <div className={styles.right}>
             <div className={styles.socials}>
@@ -131,7 +136,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className={styles.bio}>
+        <section className={styles.bio} id="bio">
           <div className="container">
             <div className={styles.bioBox}>
               <div className={styles.left}>
@@ -172,7 +177,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className={styles.shows}>
+        <section className={styles.shows} id="shows">
           <div className="container">
             <div className={styles.icon}>
               <svg
@@ -360,7 +365,80 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className={styles.music} id="music">
+          <div className="container">
+            <div className={styles.icon}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="4em"
+                height="4em"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z" />
+                <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z" />
+                <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z" />
+              </svg>
+            </div>
+            <div className={styles.heading}>
+              <div className={styles.title}>
+                <h3>Música</h3>
+              </div>
+              <div className={styles.subtitle}>
+                <h4>Lorem ipsum dolor sit amet</h4>
+              </div>
+            </div>
+            <div className={styles.spotify}>
+              <iframe
+                style={{ borderRadius: "12px" }}
+                src="https://open.spotify.com/embed/artist/45ztMs8dTg6GRQ41yY4xtr?utm_source=generator&theme=0"
+                width="100%"
+                height="500"
+                frameBorder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </section>
+        <section className={styles.contact} id="contact">
+          <div className="container">
+            <div className={styles.icon}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="4em"
+                height="4em"
+                fill="currentColor"
+                class="bi bi-envelope-fill"
+                viewBox="0 0 16 16"
+              >
+                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+              </svg>
+            </div>
+            <div className={styles.heading}>
+              <div className={styles.title}>
+                <h3>Contacto</h3>
+              </div>
+              <div className={styles.subtitle}>
+                <h4>Lorem ipsum dolor sit amet</h4>
+              </div>
+            </div>
+            <div className={styles.mail}>
+              <a href="mailto:alex@gmail.com">mgmt@alex-hoyer.com</a>
+            </div>
+            <div className={styles.mail}>
+              <a href="mailto:alex@gmail.com">booking@alex-hoyer.com</a>
+            </div>
+            <div className={styles.mail}>
+              <a href="mailto:alex@gmail.com">contacto@alex-hoyer.com</a>
+            </div>
+          </div>
+        </section>
       </main>
+      <footer className={styles.footer}>
+        Alex Hoyer 2023® Todos los derechos reservados
+      </footer>
     </>
   );
 }
