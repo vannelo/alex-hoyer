@@ -100,9 +100,223 @@ export default function Home() {
         </nav>
         <div className={styles.header}>
           <div className={styles.content}>
-            <h1>Alex Hoyer</h1>
+            <div className={styles.name}>
+              <Image
+                src="/img/alex-hoyer.png"
+                alt="Alex Hoyer"
+                className={styles.nameImg}
+                width={1612}
+                height={213}
+              />
+            </div>
             <h2>&quot;Cruda&quot;</h2>
             <h3>Ya disponible en todas las plataformas</h3>
+            <div className={styles.buttons}>
+              <div className={styles.buttonPrimary}>
+                <a
+                  href="https://open.spotify.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Video
+                </a>
+              </div>
+              <div
+                className={styles.buttonSecondary}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <a href="https://open.spotify.com/">Música</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.shows}>
+          <div className="container">
+            <div className={styles.icon}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="4em"
+                height="4em"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z"
+                />
+              </svg>
+            </div>
+            <div className={styles.heading}>
+              <div className={styles.title}>
+                <h3>Próximos shows</h3>
+              </div>
+              <div className={styles.subtitle}>
+                <h4>Lorem ipsum dolor sit amet</h4>
+              </div>
+            </div>
+            <div className={styles.showBox}>
+              <div className={styles.showItem}>
+                <div className={styles.left}>29 Marzo</div>
+                <div className={styles.center}>
+                  <div className={styles.venue}>
+                    <div>Lunario</div>
+                    <div>CDMX</div>
+                  </div>
+                </div>
+                <div className={styles.right}>
+                  <div className={styles.buttonPrimary}>
+                    <a
+                      href="https://open.spotify.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Boletos
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.showItem}>
+                <div className={styles.left}>3 Abril</div>
+                <div className={styles.center}>
+                  <div className={styles.venue}>
+                    <div>Auditorio Nacional</div>
+                    <div>CDMX</div>
+                  </div>
+                </div>
+                <div className={styles.right}>
+                  <div className={styles.buttonPrimary}>
+                    <a
+                      href="https://open.spotify.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Boletos
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.showItem}>
+                <div className={styles.left}>10 Abril</div>
+                <div className={styles.center}>
+                  <div className={styles.venue}>
+                    <div>Metropolitan</div>
+                    <div>Guadalajara</div>
+                  </div>
+                </div>
+                <div className={styles.right}>
+                  <div className={styles.buttonPrimary}>
+                    <a
+                      href="https://open.spotify.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Boletos
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.showItem}>
+                <div className={styles.left}>14 Marzo</div>
+                <div className={styles.center}>
+                  <div className={styles.venue}>
+                    <div>Café Imperial</div>
+                    <div>Monterrey</div>
+                  </div>
+                </div>
+                <div className={styles.right}>
+                  <div className={styles.buttonPrimary}>
+                    <a
+                      href="https://open.spotify.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Boletos
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.showItem}>
+                <div className={styles.left}>29 Marzo</div>
+                <div className={styles.center}>
+                  <div className={styles.venue}>
+                    <div>Lunario</div>
+                    <div>CDMX</div>
+                  </div>
+                </div>
+                <div className={styles.right}>
+                  <div className={styles.buttonPrimary}>
+                    <a
+                      href="https://open.spotify.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Boletos
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.showItem}>
+                <div className={styles.left}>3 Abril</div>
+                <div className={styles.center}>
+                  <div className={styles.venue}>
+                    <div>Auditorio Nacional</div>
+                    <div>CDMX</div>
+                  </div>
+                </div>
+                <div className={styles.right}>
+                  <div className={styles.buttonPrimary}>
+                    <a
+                      href="https://open.spotify.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Boletos
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.showItem}>
+                <div className={styles.left}>10 Abril</div>
+                <div className={styles.center}>
+                  <div className={styles.venue}>
+                    <div>Metropolitan</div>
+                    <div>Guadalajara</div>
+                  </div>
+                </div>
+                <div className={styles.right}>
+                  <div className={styles.buttonPrimary}>
+                    <a
+                      href="https://open.spotify.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Boletos
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.showItem}>
+                <div className={styles.left}>14 Marzo</div>
+                <div className={styles.center}>
+                  <div className={styles.venue}>
+                    <div>Café Imperial</div>
+                    <div>Monterrey</div>
+                  </div>
+                </div>
+                <div className={styles.right}>
+                  <div className={styles.buttonPrimary}>
+                    <a
+                      href="https://open.spotify.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Boletos
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </main>
